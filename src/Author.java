@@ -2,10 +2,10 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Author {
-    public String name;
-    public String email;
-    public char køn;
-    public Book[] book;
+    private String name;
+    private String email;
+    private char køn;
+    private Book[] book;
     ArrayList<Book> books = new ArrayList<>();
 
     @Override

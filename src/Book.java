@@ -3,10 +3,10 @@ import java.util.ArrayList;
 public class Book extends Author {
 
 
-    public String title;
-    public int pages;
+    private String title;
+    private int pages;
 
-    public Author author;
+    private Author author;
 
     public Author getAuthor() {
         return author;

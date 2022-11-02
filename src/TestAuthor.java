@@ -15,13 +15,12 @@ public class TestAuthor {
         //Book book = new Book("Klodshans", 48, author1,test );
         //Book booketwo = new Book("Kfffs", 8);
         test.add(1, book1);
-        System.out.println(test.get(0).author);
-        System.out.println(test.get(0).title);
-        System.out.println(test.get(0).pages);
+        System.out.println(test.get(0).getAuthor());
+        System.out.println(test.get(0).getTitle());
+        System.out.println(test.get(0).getPages());
         //System.out.println(test.get(1).author);
-        System.out.println(test.get(1).title);
-        System.out.println(test.get(1).pages);
-
+        System.out.println(test.get(1).getTitle());
+        System.out.println(test.get(1).getPages());
 
 
         /*System.out.println(book.getTitle());
