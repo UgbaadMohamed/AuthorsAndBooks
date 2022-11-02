@@ -1,33 +1,39 @@
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class TestAuthor {
+
+
     void run () {
         Author author1 = new Author("H. C.Andersen",'M',"hc@ndersen.dk");
         System.out.println("AUTHORS AND BOOKS:");
-        System.out.print(author1.getName());
-        System.out.print("           " + author1.getKøn());
-        System.out.print("      " + author1.getEmail());
-        author1.addBook(new Book("Fyrtøjet",37,author1));
+        ArrayList<Book> test = new ArrayList<>();
+        Book book = new Book("test", 5, author1, test);
+        Book book1 = new Book("Fyrtårnet", 3, author1, test);
+        test.add(0, book);
+        //Book book1 = new Book("a", 2, author1, test);
+        //Book book = new Book("Klodshans", 48, author1,test );
+        //Book booketwo = new Book("Kfffs", 8);
+        test.add(1, book1);
+        System.out.println(test.get(0).author);
+        System.out.println(test.get(0).title);
+        System.out.println(test.get(0).pages);
+        //System.out.println(test.get(1).author);
+        System.out.println(test.get(1).title);
+        System.out.println(test.get(1).pages);
+
+
+
+        /*System.out.println(book.getTitle());
+        System.out.println(book.getTitle());
+        System.out.println(book.getAuthors());*/
+        author1.addBook(book);
+        //author1.addBook(booketwo);
+        System.out.println("""
+                """);
+        //System.out.println(author1.books);
 
     }
-
-      //  Book one  = new Book("fyrtøjet",437,author);
-        //System.out.println(one.getTitle() + one.getPages() + one.getAuthors(1) );
-
-
-
-       //Book oneAndersen = new Book("H. C.Andersen",'M',"hc@ndersen","Klods-Hans","aa" );
-
-
-    //  Books twoAndersen = new Books("H. C.Andersen",'M',"hc@ndersen","fyrtøjet",37 );
-      // Books oneRowling = new Books("J. K. Rowling",'F',"jk@rowling.co.uk","Harry Potter Part 1",437 );
-      //    Books twoRowling = new Books("J. K. Rowling",'F',"jk@rowling.co.uk","Harry Potter Part 2",652 );
-     //   Books threeRowling = new Books("J. K. Rowling",'F',"jk@rowling.co.uk","Harry Potter Part 3",318 );
-    //    Books fourRowling = new Books("J. K. Rowling",'F',"jk@rowling.co.uk","Harry Potter Part 4",445 );
-     //   Books oneKirkegård = new Books("Søren Kirkegård",'M',"kirkeg@rd.dk","filosofiens grundviden",912 );
-     //   Books twoKirkegård = new Books("Søren Kirkegård",'M',"kirkeg@rd.dk","filopsofi for viderkomne",713 );
-     //   Books threeKirkegård = new Books("Søren Kirkegård",'M',"kirkeg@rd.dk","Avancewret akademisk filosofi",599 );
-
 
 
 
