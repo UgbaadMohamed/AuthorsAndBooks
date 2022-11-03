@@ -20,7 +20,6 @@ public class Book extends Author {
 
     }
 
-
     public String getTitle() {
         return title;
     }
@@ -29,12 +28,4 @@ public class Book extends Author {
         return pages;
     }
 
-    @Override
-    public String toString() {
-        return "Book{" +
-                "title='" + title + '\'' +
-                ", pages=" + pages +
-                ", author=" + author +
-                '}';
-    }
 }

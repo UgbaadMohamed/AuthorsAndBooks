@@ -1,22 +1,21 @@
-
 import java.util.ArrayList;
 
 public class TestAuthor {
 
     void run () {
 
-        ArrayList<Book> test = new ArrayList<>();
+        //Udskrivelse af overskrift.
         System.out.println("AUTHORS AND BOOKS:");
-        //Oprettelse af de tre instancere (Authors)
 
+        //Oprettelse af de tre instancere (Authors)
         Author author1 = new Author("H. C.Andersen  ",'M',  " hc@ndersen.dk");
         Author author2 = new Author("J.K.Rowling    ",'F'," k@rowling.co.uk");
         Author author3 = new Author("Søren Kirkegård",'M',"  kirkeg@rd.dk");
 
 
         //Oprettelse af arraylist af bøger.
-
-       Book BookOne = new Book("Klodshans", 66, author1, test);
+        ArrayList<Book> test = new ArrayList<>();
+        Book BookOne = new Book("Klodshans", 66, author1, test);
         Book Booktwo = new Book("Fyrtårnet", 37, author1, test);
         Book Bookthree = new Book("Harry Potter - Part 1", 437, author2, test);
         Book Bookfour = new Book("Harry Potter - Part 2", 652, author2, test);
@@ -42,12 +41,12 @@ public class TestAuthor {
         //Udprintet af Hc.Andersen og hans bøger.
         System.out.println(test.get(1).getAuthor());
         System.out.print(test.get(0).getTitle());
-        System.out.println("                            " +test.get(0).getPages());
+        System.out.println("                             " +test.get(0).getPages());
         System.out.println(test.get(1).getAuthor());
         System.out.print(test.get(0).getTitle());
-        System.out.println("                            " +test.get(0).getPages());
+        System.out.println("                             " +test.get(0).getPages());
         System.out.print(test.get(1).getTitle());
-        System.out.println("                            " +test.get(1).getPages());
+        System.out.println("                             " +test.get(1).getPages());
 
         //Udprintet af J.K.Rowling og hendes bøger.
         System.out.println(test.get(2).getAuthor());
