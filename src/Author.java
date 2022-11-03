@@ -6,7 +6,7 @@ public class Author {
     private String email;
     private char køn;
 
-    ArrayList<Book> books = new ArrayList<>();
+
 
     public Author(String name, char køn, String email) {
         this.name = name;
