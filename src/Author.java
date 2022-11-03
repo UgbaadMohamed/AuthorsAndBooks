@@ -6,12 +6,7 @@ public class Author {
     private String email;
     private char køn;
 
-    @Override
-    public String toString() {
-        return name + "   " + køn +
-                "       " + email
-                ;
-    }
+    ArrayList<Book> books = new ArrayList<>();
 
     public Author(String name, char køn, String email) {
         this.name = name;
@@ -37,6 +32,14 @@ public class Author {
     public void setEmail(String email) {
         this.email = email;
     }
+
+    @Override
+    public String toString() {
+        return name + "   " + køn +
+                "       " + email
+                ;
+    }
+
 }
 
 
